@@ -1,0 +1,21 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 350px;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: right;
+}

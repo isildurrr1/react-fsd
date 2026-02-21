@@ -1,0 +1,13 @@
+.deleteButton {
+  border-color: #e0e0e0;
+}
+
+.deleteButton:hover {
+  border-color: #d32f2f;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+}

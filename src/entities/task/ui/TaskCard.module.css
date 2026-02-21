@@ -1,0 +1,69 @@
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 12px 16px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+.mainCard {
+  flex: 1 1 auto;
+}
+
+.cardCompleted {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.cardPending {
+  background-color: #ffffff;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.title {
+  margin: 0;
+  font-size: 16px;
+  width: 400px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.titleCompleted {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  line-height: 1.4;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+
+.badgePending {
+  border-color: #bdbdbd;
+  color: #424242;
+  background-color: #ffffff;
+}
+
+.badgeCompleted {
+  border-color: #2e7d32;
+  background-color: #2e7d32;
+  color: #ffffff;
+}

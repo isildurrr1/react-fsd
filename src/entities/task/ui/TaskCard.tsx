@@ -1,9 +1,9 @@
 import styles from "./TaskCard.module.css";
 import { DeleteButton } from "shared/ui/DeleteButton";
-import type { FC } from "react";
+import { memo, type FC } from "react";
 import type { TaskCardProps } from "../model/types";
 
-export const TaskCard: FC<TaskCardProps> = ({ taskData, onDelete }) => {
+export const TaskCard: FC<TaskCardProps> = memo(({ taskData, onDelete }) => {
   const { title, id, completed } = taskData;
   const statusLabel = completed ? "Готово" : "В процессе";
 
@@ -27,4 +27,4 @@ export const TaskCard: FC<TaskCardProps> = ({ taskData, onDelete }) => {
       <DeleteButton onClick={handleDeleteClick} />
     </div>
   );
-};
+});

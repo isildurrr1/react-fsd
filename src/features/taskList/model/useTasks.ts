@@ -1,6 +1,6 @@
 import { useCallback, useMemo, useState } from "react";
-import type { Filter, Task } from "entities/task/model/types";
-import type { UseTasksResult } from "./types";
+import type { Task } from "entities/task/model/types";
+import type { Filter, UseTasksResult } from "./types";
 
 export const useTasks = (initial: Task[]): UseTasksResult => {
   const [allTasks, setAllTasks] = useState<Task[]>(initial);

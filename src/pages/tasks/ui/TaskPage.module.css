@@ -1,0 +1,14 @@
+.page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 16px 0;
+  box-sizing: border-box;
+}
+
+.title {
+  margin: 0 0 16px;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: left;
+}

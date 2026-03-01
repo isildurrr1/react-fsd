@@ -6,6 +6,16 @@
   box-sizing: border-box;
 }
 
+.itemRow {
+  display: flex;
+  gap: 10px;
+  align-items: stretch;
+}
+
+.itemRow > :first-child {
+  flex: 1 1 auto;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -23,4 +33,10 @@
   font-size: 20px;
   font-weight: 600;
   text-align: right;
+}
+
+.empty {
+  display: flex;
+  justify-content: center;
+  padding: 12px 0;
 }

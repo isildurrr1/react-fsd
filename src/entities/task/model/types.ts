@@ -6,7 +6,5 @@ export interface Task {
 
 export interface TaskCardProps {
   taskData: Task;
-  onDelete: (id: string) => void;
 }
 
-export type Filter = "all" | "completed" | "incomplete";

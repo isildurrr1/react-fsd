@@ -1,4 +1,4 @@
-import type { Filter } from "entities/task/model/types";
+import type { Filter } from "./types";
 
 export const FILTERS: { value: Filter; label: string }[] = [
   { value: "all", label: "Все" },

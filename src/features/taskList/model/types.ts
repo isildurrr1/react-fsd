@@ -1,4 +1,4 @@
-import type { Task } from "entities/task/model/types";
+import type { Task } from "entities/task";
 
 export type Filter = "all" | "completed" | "incomplete";
 
@@ -7,6 +7,7 @@ export type UseTasksResult = {
   filter: Filter;
   setFilter: (f: Filter) => void;
   removeTask: (id: string) => void;
+  isLoading: boolean;
 };
 
 export interface TaskListProps {

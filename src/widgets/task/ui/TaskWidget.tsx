@@ -1,9 +1,18 @@
 import { useTasks } from "features/taskList/model/useTasks";
-import { MOCK_TASKS } from "../model/constants";
-import { TaskList } from "features/taskList/ui/TaskList";
+import { Spinner } from "shared/ui/Spinner";
+import styles from "./TaskWidget.module.css";
+import { TaskList } from "features/taskList";
 
 export const TaskWidget = () => {
-  const { tasks, filter, setFilter, removeTask } = useTasks(MOCK_TASKS);
+  const { tasks, filter, setFilter, removeTask, isLoading } = useTasks();
+
+  if (isLoading) {
+    return (
+      <div className={styles.loaderContainer}>
+        <Spinner />
+      </div>
+    );
+  }
 
   return (
     <TaskList
